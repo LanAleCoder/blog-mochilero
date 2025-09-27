@@ -1,16 +1,74 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import "../styles/global.css";
 
+// Obtener posts usando Content Collections
+const posts = await getCollection("blog");
+const recentPosts = posts
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 6);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Guatemala Mochilero - Guías Auténticas de Viaje Económico"
+  description="Descubre Guatemala con un presupuesto mínimo. Guías auténticas, costos reales y consejos locales para mochileros inteligentes."
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-600 to-blue-600 text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        Descubre Guatemala<br />
+        <span class="text-yellow-300">Sin Quebrar el Cochinito</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 opacity-90">
+        Guías auténticas de un guatemalteco local.<br />
+        Costos reales, consejos prácticos, experiencias inolvidables.
+      </p>
+    </div>
+  </section>
+
+  <!-- Recent Posts -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Últimas Guías</h2>
+      {
+        recentPosts.length > 0 ? (
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {recentPosts.map((post) => (
+              <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                {post.data.heroImage && (
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.title}
+                    class="w-full h-48 object-cover"
+                    loading="lazy"
+                  />
+                )}
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2 leading-tight">
+                    <a
+                      href={`/blog/${post.slug}/`}
+                      class="text-gray-900 hover:text-green-600 transition-colors"
+                    >
+                      {post.data.title}
+                    </a>
+                  </h3>
+                  <p class="text-gray-600 mb-4">{post.data.description}</p>
+                  <div class="flex items-center justify-between text-sm text-gray-500">
+                    <time>{post.data.pubDate.toLocaleDateString("es-GT")}</time>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div class="text-center text-gray-600">
+            <p>¡Próximamente contenido increíble!</p>
+            <p class="text-sm mt-2">Estoy trabajando en las primeras guías.</p>
+          </div>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

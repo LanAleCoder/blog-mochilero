@@ -1,0 +1,35 @@
+---
+export interface Props {
+  size: 'banner' | 'rectangle' | 'skyscraper';
+  position?: string;
+}
+
+const { size, position } = Astro.props;
+
+const dimensions = {
+  banner: 'w-full max-w-[728px] h-[90px] md:h-[90px]',
+  rectangle: 'w-[300px] h-[250px]',
+  skyscraper: 'w-[160px] h-[600px]'
+};
+
+const sizeClass = dimensions[size];
+---
+
+<div class={`ad-placeholder ${sizeClass} mx-auto my-6 border-2 border-dashed border-gray-300 bg-gray-50 flex items-center justify-center`}>
+  <div class="text-center text-gray-500">
+    <p class="text-sm font-medium">Espacio Publicitario</p>
+    <p class="text-xs">AdSense - Próximamente</p>
+  </div>
+</div>
+
+<style>
+  .ad-placeholder {
+    position: relative;
+  }
+  
+  /* Cuando AdSense esté aprobado, estas clases se reemplazarán */
+  .ad-placeholder.adsense-ready {
+    border: none;
+    background: transparent;
+  }
+</style>

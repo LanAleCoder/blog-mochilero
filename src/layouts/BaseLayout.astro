@@ -1,0 +1,174 @@
+---
+import "../styles/global.css";
+
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+}
+
+const {
+  title,
+  description = "Guía completa de viajes económicos por Guatemala desde la perspectiva de un local",
+  image = "/og-default.jpg",
+  canonical,
+} = Astro.props;
+
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO básico -->
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.site)} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Analytics (cuando esté listo) -->
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "GA_MEASUREMENT_ID");
+    </script>
+  </head>
+
+  <body class="font-inter bg-white text-gray-900 leading-relaxed">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm border-b">
+      <nav class="max-w-4xl mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="text-2xl font-bold text-green-600">
+            🇬🇹 Guatemala Mochilero
+          </a>
+          <div class="hidden md:flex space-x-6">
+            <a
+              href="/blog"
+              class="text-gray-600 hover:text-green-600 transition-colors"
+              >Blog</a
+            >
+            <a
+              href="/guias"
+              class="text-gray-600 hover:text-green-600 transition-colors"
+              >Guías</a
+            >
+            <a
+              href="/presupuestos"
+              class="text-gray-600 hover:text-green-600 transition-colors"
+              >Presupuestos</a
+            >
+            <a
+              href="/acerca"
+              class="text-gray-600 hover:text-green-600 transition-colors"
+              >Acerca</a
+            >
+          </div>
+          <button class="md:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t mt-16">
+      <div class="max-w-4xl mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="font-semibold mb-4">Guatemala Mochilero</h3>
+            <p class="text-gray-600 text-sm">
+              Guías auténticas de viaje por Guatemala desde la perspectiva de un
+              local. Viaja inteligente, gasta menos, experimenta más.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Enlaces Útiles</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="/politica-privacidad"
+                  class="text-gray-600 hover:text-green-600"
+                  >Política de Privacidad</a>
+              </li>
+              <li>
+                <a href="/terminos" class="text-gray-600 hover:text-green-600"
+                  >Términos de Uso</a>
+              </li>
+              <li>
+                <a href="/contacto" class="text-gray-600 hover:text-green-600"
+                  >Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Sígueme</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-600 hover:text-green-600"
+                >Instagram</a
+              >
+              <a href="#" class="text-gray-600 hover:text-green-600">YouTube</a>
+              <a href="#" class="text-gray-600 hover:text-green-600">TikTok</a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t pt-8 mt-8 text-center text-sm text-gray-600">
+          <p>&copy; 2025 Guatemala Mochilero. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
