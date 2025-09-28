@@ -1,0 +1,198 @@
+{
+  "nav": {
+    "destinations": "Destinations",
+    "transport": "Transport",
+    "guides": "Guides",
+    "tips": "Tips"
+  },
+  "hero": {
+    "title": "Your Complete Guatemala Transportation Guide",
+    "subtitle": "Discover the best ways to reach every destination in Guatemala with up-to-date information on costs, schedules, and practical tips for travelers.",
+    "cta": "Explore Destinations"
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewDetails": "View details",
+    "backToDestinations": "Back to destinations",
+    "advertisement": "Advertisement",
+    "featured": "Featured",
+    "duration": "Duration",
+    "cost": "Cost",
+    "companies": "Companies",
+    "tips": "Important Tips",
+    "loading": "Loading...",
+    "error": "Error",
+    "search": "Search",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "destinations": {
+    "title": "Popular Destinations",
+    "subtitle": "Explore Guatemala's most amazing destinations with detailed transportation guides. Each destination includes multiple route options, costs, and insider tips.",
+    "transportDetails": "View Transportation Details",
+    "noDestinations": "No destinations found",
+    "searchPlaceholder": "Search destinations..."
+  },
+  "transport": {
+    "title": "Transportation Options",
+    "subtitle": "Choose the transportation option that best fits your budget and travel preferences.",
+    "private": "Private Transport",
+    "public": "Public Transport",
+    "alternative": "Alternative Options",
+    "schedule": "Schedule",
+    "route": "Route",
+    "booking": "Book Now",
+    "availability": "Availability"
+  },
+  "blog": {
+    "title": "Latest Travel Guides",
+    "subtitle": "Stay updated with the latest guides, tips and transportation updates to travel Guatemala safely and economically.",
+    "categories": "Categories",
+    "popular": "Most Read",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Get the latest route updates and travel tips.",
+    "subscribe": "Subscribe",
+    "viewAll": "View All Guides",
+    "publishedOn": "Published on",
+    "author": "Author",
+    "readTime": "min read"
+  },
+  "footer": {
+    "tagline": "Your trusted companion for traveling Guatemala",
+    "quickLinks": "Quick Links",
+    "categories": "Categories",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "sitemap": "Sitemap"
+  },
+  "seo": {
+    "defaultTitle": "Guatemala Transportation Guide - Tourist Blog",
+    "defaultDescription": "Your complete guide to travel Guatemala. Up-to-date information on transportation, tourist destinations, costs and practical tips for travelers.",
+    "keywords": "Guatemala, tourism, transportation, travel, destinations, guide, tips",
+    "author": "Guatemala Tourist Blog"
+  },
+  "destinations": {
+    "title": "Popular Destinations",
+    "subtitle": "Explore Guatemala's most amazing destinations with detailed transportation guides. Each destination includes multiple route options, costs, and insider tips.",
+    "transportDetails": "View Transportation Details",
+    "featured": "Featured Destinations",
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
+    "transportOptions": "Transportation Options",
+    "highlights": "Highlights",
+    "fromCapital": "From Capital",
+    "cost": "Cost",
+    "time": "Time",
+    "companies": "Companies",
+    "description": "Description",
+    "places": {
+      "antigua": {
+        "name": "Antigua Guatemala",
+        "description": "Colonial charm with cobblestone streets and volcanic backdrop",
+        "highlights": ["UNESCO World Heritage", "Volcano hiking", "Spanish schools"]
+      },
+      "atitlan": {
+        "name": "Lake Atitlán",
+        "description": "Stunning volcanic lake surrounded by indigenous villages",
+        "highlights": ["Boat transportation", "Indigenous culture", "Volcano views"]
+      },
+      "tikal": {
+        "name": "Tikal National Park",
+        "description": "Ancient Maya ruins in the heart of the jungle",
+        "highlights": ["Maya temples", "Wildlife spotting", "Sunrise tours"]
+      },
+      "semuc": {
+        "name": "Semuc Champey",
+        "description": "Natural limestone pools in lush jungle setting",
+        "highlights": ["Natural pools", "Cave exploration", "Adventure activities"]
+      },
+      "riodulce": {
+        "name": "Río Dulce",
+        "description": "Tropical river connecting lake to Caribbean coast",
+        "highlights": ["River tours", "Hot springs", "Bird watching"]
+      },
+      "xela": {
+        "name": "Quetzaltenango (Xela)",
+        "description": "Guatemala's second city, gateway to highlands",
+        "highlights": ["Highland culture", "Language schools", "Market visits"]
+      }
+    },
+    "transportTypes": {
+      "touristShuttle": "Tourist shuttle",
+      "firstClassBus": "First class bus",
+      "privateCar": "Private car",
+      "privateShuttle": "Private shuttle",
+      "chickenBus": "Chicken bus",
+      "domesticFlight": "Domestic flight",
+      "overnightBus": "Overnight bus",
+      "privateTour": "Private tour",
+      "localBuses": "Local buses",
+      "boatTransport": "Boat transport"
+    }
+  },
+  "ads": {
+    "hotel": "Hotel Casa Santo Domingo",
+    "hotelDesc": "Luxury hotel in Antigua Guatemala",
+    "insurance": "Guatemala Travel Insurance",
+    "insuranceDesc": "Protect your journey with comprehensive coverage",
+    "shuttle": "Shuttle Services Guatemala",
+    "shuttleDesc": "Comfortable private shuttles to all destinations",
+    "spanish": "Spanish Schools Antigua",
+    "spanishDesc": "Learn Spanish while traveling",
+    "getQuote": "Get Quote",
+    "reserveNow": "Reserve Now",
+    "learnMore": "Learn More"
+  },
+  "tips": {
+    "safety": {
+      "title": "Safety Tips",
+      "daylight": "Travel During Daylight",
+      "daylightDesc": "Use public transportation and travel between cities during daylight hours when possible.",
+      "valuables": "Keep Valuables Secure",
+      "valuablesDesc": "Don't display expensive items. Use a money belt and keep copies of important documents.",
+      "buses": "Stay Alert on Buses",
+      "busesDesc": "Keep bags in your lap on chicken buses. First-class buses have luggage compartments.",
+      "itinerary": "Share Your Itinerary",
+      "itineraryDesc": "Let someone know your travel plans, especially for remote destinations like Semuc Champey."
+    },
+    "money": {
+      "title": "Money Tips",
+      "bills": "Carry Small Bills",
+      "billsDesc": "Bus drivers often don't have change for large bills. Carry 1, 5, and 10 quetzal notes.",
+      "negotiate": "Negotiate Private Transport",
+      "negotiateDesc": "Always agree on prices before getting in taxis or private shuttles to avoid disputes.",
+      "tips": "Budget for Tips",
+      "tipsDesc": "Tip shuttle drivers, boat operators, and tour guides. 10-15% is standard for good service.",
+      "atm": "ATM Availability",
+      "atmDesc": "Withdraw cash in major cities. Rural areas have limited ATM access."
+    },
+    "practical": {
+      "title": "Practical Tips",
+      "pack": "Pack Light for Buses",
+      "packDesc": "Chicken buses have limited space. Large backpacks may need to go on the roof.",
+      "spanish": "Learn Basic Spanish",
+      "spanishDesc": "Bus routes and schedules are rarely in English. Basic Spanish helps immensely.",
+      "delays": "Plan for Delays",
+      "delaysDesc": "Allow extra time for connections. Weather and road conditions can cause delays.",
+      "snacks": "Bring Snacks",
+      "snacksDesc": "Long bus journeys may not include meal stops. Bring water and snacks."
+    },
+    "booking": {
+      "title": "Booking Tips",
+      "advance": "Book Shuttles in Advance",
+      "advanceDesc": "Tourist shuttles fill up quickly during peak season (December-April, July-August).",
+      "flights": "Domestic Flight Timing",
+      "flightsDesc": "Book flights to Flores/Tikal early morning to maximize time at the ruins.",
+      "flexible": "Flexible Bus Schedules",
+      "flexibleDesc": "Chicken buses run frequently but don't follow strict schedules. First-class buses are more punctual.",
+      "pickup": "Accommodation Pickup",
+      "pickupDesc": "Many shuttles offer hotel pickup. Confirm pickup time and location the day before."
+    }
+  }
+}
