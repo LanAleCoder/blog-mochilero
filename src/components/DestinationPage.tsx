@@ -543,7 +543,7 @@ export function DestinationPage({ destination, onBack }: DestinationPageProps) {
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-3">
             {/* Ad Banner Top */}
-            <AdBanner size="medium" className="mb-8" />
+            <AdBanner size="medium" className="mb-8" useAdsterra={true} />
 
             {/* Transportation Section */}
             <section className="mb-12">
@@ -646,7 +646,7 @@ export function DestinationPage({ destination, onBack }: DestinationPageProps) {
             </section>
 
             {/* Ad Banner Middle */}
-            <AdBanner size="small" className="mb-8" />
+            <AdBanner size="small" className="mb-8" useAdsterra={true} />
 
             {/* Attractions Section */}
             <section className="mb-12">
@@ -729,7 +729,7 @@ export function DestinationPage({ destination, onBack }: DestinationPageProps) {
               </Card>
 
               {/* Side Ad */}
-              <AdBanner size="large" position="side" />
+              <AdBanner size="large" position="side" useAdsterra={true} />
 
               {/* Additional Info Card */}
               <Card>

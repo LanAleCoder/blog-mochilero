@@ -174,7 +174,7 @@ export function BlogPage({ article, onBack }: BlogPageProps) {
             </div>
 
             {/* Ad Banner Top */}
-            <AdBanner size="medium" className="mb-8" />
+            <AdBanner size="medium" className="mb-8" useAdsterra={true} />
 
             {/* Article Content */}
             <article className="prose prose-lg max-w-none">
@@ -240,7 +240,7 @@ export function BlogPage({ article, onBack }: BlogPageProps) {
             </div>
 
             {/* Ad Banner Bottom */}
-            <AdBanner size="small" className="mt-8" />
+            <AdBanner size="small" className="mt-8" useAdsterra={true} />
           </div>
 
           {/* Sidebar */}
@@ -272,7 +272,7 @@ export function BlogPage({ article, onBack }: BlogPageProps) {
               </Card>
 
               {/* Side Ad */}
-              <AdBanner size="large" position="side" />
+              <AdBanner size="large" position="side" useAdsterra={true} />
 
               {/* Table of Contents */}
               <Card>

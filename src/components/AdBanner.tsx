@@ -1,13 +1,17 @@
 import { Card, CardContent } from "./ui/card"
 import { Badge } from "./ui/badge"
+import { useEffect, useRef } from "react"
 
 interface AdBannerProps {
   size?: "small" | "medium" | "large"
   position?: "top" | "side" | "bottom"
   className?: string
+  useAdsterra?: boolean
 }
 
-export function AdBanner({ size = "medium", position = "top", className = "" }: AdBannerProps) {
+export function AdBanner({ size = "medium", position = "top", className = "", useAdsterra = false }: AdBannerProps) {
+  const adsterraRef = useRef<HTMLDivElement>(null)
+
   const getAdSize = () => {
     switch (size) {
       case "small":
@@ -17,6 +21,58 @@ export function AdBanner({ size = "medium", position = "top", className = "" }: 
       default:
         return "h-24 text-sm"
     }
+  }
+
+  // Componente para Adsterra
+  const AdsterraAd = () => {
+    useEffect(() => {
+      if (adsterraRef.current) {
+        // Limpiar cualquier script anterior
+        adsterraRef.current.innerHTML = ''
+
+        // Crear el script de configuración
+        const configScript = document.createElement('script')
+        configScript.type = 'text/javascript'
+        configScript.innerHTML = `
+          atOptions = {
+            'key' : 'd7cffe183e61f81f53eb6c057369a5ae',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        `
+
+        // Crear el script de invocación
+        const invokeScript = document.createElement('script')
+        invokeScript.type = 'text/javascript'
+        invokeScript.src = '//www.highperformanceformat.com/d7cffe183e61f81f53eb6c057369a5ae/invoke.js'
+
+        // Agregar ambos scripts al contenedor
+        adsterraRef.current.appendChild(configScript)
+        adsterraRef.current.appendChild(invokeScript)
+      }
+    }, [])
+
+    return (
+      <div className={`w-full ${className}`}>
+        <div className="text-center mb-2">
+          <Badge variant="outline" className="text-xs text-gray-500">
+            Publicidad
+          </Badge>
+        </div>
+        <div
+          ref={adsterraRef}
+          className="flex justify-center items-center min-h-[90px] bg-gray-50 border border-gray-200 rounded"
+          style={{ maxWidth: '728px', margin: '0 auto' }}
+        />
+      </div>
+    )
+  }
+
+  // Si useAdsterra es true, mostrar el anuncio de Adsterra
+  if (useAdsterra) {
+    return <AdsterraAd />
   }
 
   const getAdContent = () => {

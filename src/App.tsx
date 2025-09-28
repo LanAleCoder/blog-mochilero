@@ -273,14 +273,14 @@ function App() {
 
             {/* Top Ad Banner */}
             <div className="container mx-auto px-4 py-4">
-              <AdBanner size="medium" />
+              <AdBanner size="medium" useAdsterra={true} />
             </div>
 
             <FeaturedDestinations onDestinationClick={handleDestinationClick} />
 
             {/* Middle Ad Banner */}
             <div className="container mx-auto px-4 py-4">
-              <AdBanner size="small" />
+              <AdBanner size="small" useAdsterra={true} />
             </div>
 
             <TransportationGuide />

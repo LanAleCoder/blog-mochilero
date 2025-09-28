@@ -38,7 +38,7 @@ export function BlogSection({ onBlogClick }: BlogSectionProps) {
               )}
 
               {/* Ad between posts */}
-              <AdBanner size="medium" />
+              <AdBanner size="medium" useAdsterra={true} />
 
               {/* Regular posts grid */}
               <div className="grid md:grid-cols-2 gap-6">
@@ -86,7 +86,7 @@ export function BlogSection({ onBlogClick }: BlogSectionProps) {
               </div>
 
               {/* Sidebar Ad */}
-              <AdBanner size="large" position="side" />
+              <AdBanner size="large" position="side" useAdsterra={true} />
 
               {/* Popular Posts */}
               <div className="bg-card p-6 rounded-lg shadow-sm border">
