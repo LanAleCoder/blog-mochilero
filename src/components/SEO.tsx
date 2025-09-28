@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useLanguage } from "./LanguageProvider"
+import { APP_CONFIG } from "../config/app"
 
 interface SEOProps {
   title?: string
@@ -57,7 +58,7 @@ export function SEO({
   const seoDescription = description || defaultDescription
   const seoKeywords = keywords || defaultKeywords
   const seoAuthor = author || defaultAuthor
-  const baseUrl = "https://guatemala-transport-guide.com"
+  const baseUrl = APP_CONFIG.baseUrl
   const fullUrl = url ? `${baseUrl}${url}` : baseUrl
   const fullImageUrl = image.startsWith("http") ? image : `${baseUrl}${image}`
 

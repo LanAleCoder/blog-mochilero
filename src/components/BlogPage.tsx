@@ -7,6 +7,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback"
 import { AdBanner } from "./AdBanner"
 import { useLanguage } from "./LanguageProvider"
 import { useBreadcrumbStructuredData, useArticleStructuredData } from "../hooks/useStructuredData"
+import { URLS } from "../config/app"
 
 interface BlogPageProps {
   article: BlogArticle
@@ -71,7 +72,7 @@ export function BlogPage({ article, onBack }: BlogPageProps) {
 
   // Share functions
   const getFullUrl = () => {
-    return `https://guatemala-transport-guide.com/blog/${article.id}`
+    return URLS.blog(article.id)
   }
 
   const shareOnFacebook = (article: BlogArticle) => {

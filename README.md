@@ -53,8 +53,8 @@
   ## SEO y Configuración
 
   ### URLs Multiidioma
-  - Español (por defecto): `https://guatemala-transport-guide.com/`
-  - Inglés: `https://guatemala-transport-guide.com/en`
+  - Español (por defecto): `https://guatemala-mochilero.vercel.app/`
+  - Inglés: `https://guatemala-mochilero.vercel.app/en`
 
   ### Meta Tags Dinámicos
   El componente `SEO` permite personalizar meta tags por página:

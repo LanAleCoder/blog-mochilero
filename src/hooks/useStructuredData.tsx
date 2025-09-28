@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { APP_CONFIG } from "../config/app"
 
 export function useStructuredData(data: any) {
   useEffect(() => {
@@ -27,7 +28,7 @@ export function useBreadcrumbStructuredData(items: Array<{ name: string; url: st
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://guatemala-transport-guide.com${item.url}`
+      "item": `${APP_CONFIG.baseUrl}${item.url}`
     }))
   }
 
@@ -55,20 +56,20 @@ export function useArticleStructuredData(article: {
     },
     "datePublished": article.publishedDate,
     "dateModified": article.modifiedDate || article.publishedDate,
-    "image": `https://guatemala-transport-guide.com${article.image}`,
-    "url": `https://guatemala-transport-guide.com${article.url}`,
+    "image": `${APP_CONFIG.baseUrl}${article.image}`,
+    "url": `${APP_CONFIG.baseUrl}${article.url}`,
     "keywords": article.keywords?.join(", "),
     "publisher": {
       "@type": "Organization",
       "name": "Blog Turístico Guatemala",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://guatemala-transport-guide.com/logo.png"
+        "url": `${APP_CONFIG.baseUrl}/logo.png`
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://guatemala-transport-guide.com${article.url}`
+      "@id": `${APP_CONFIG.baseUrl}${article.url}`
     }
   }
 
@@ -95,7 +96,7 @@ export function useTravelGuideStructuredData(guide: {
       "@type": "TouristDestination",
       "name": guide.destination,
       "description": `Información de transporte y viaje para ${guide.destination}`,
-      "image": `https://guatemala-transport-guide.com${guide.image}`
+      "image": `${APP_CONFIG.baseUrl}${guide.image}`
     },
     "duration": guide.duration,
     "estimatedCost": guide.cost ? {
@@ -103,8 +104,8 @@ export function useTravelGuideStructuredData(guide: {
       "value": guide.cost,
       "currency": "GTQ"
     } : undefined,
-    "image": `https://guatemala-transport-guide.com${guide.image}`,
-    "url": `https://guatemala-transport-guide.com${guide.url}`,
+    "image": `${APP_CONFIG.baseUrl}${guide.image}`,
+    "url": `${APP_CONFIG.baseUrl}${guide.url}`,
     "includes": guide.includes,
     "difficulty": guide.difficulty,
     "publisher": {
