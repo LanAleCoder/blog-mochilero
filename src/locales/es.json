@@ -1,0 +1,198 @@
+{
+  "nav": {
+    "destinations": "Destinos",
+    "transport": "Transporte",
+    "guides": "Guías",
+    "tips": "Consejos"
+  },
+  "hero": {
+    "title": "Tu Guía Completa de Transporte en Guatemala",
+    "subtitle": "Descubre las mejores formas de llegar a cada destino en Guatemala con información actualizada sobre costos, horarios y consejos prácticos para viajeros.",
+    "cta": "Explorar Destinos"
+  },
+  "common": {
+    "readMore": "Leer más",
+    "viewDetails": "Ver detalles",
+    "backToDestinations": "Volver a destinos",
+    "advertisement": "Publicidad",
+    "featured": "Destacado",
+    "duration": "Duración",
+    "cost": "Costo",
+    "companies": "Empresas",
+    "tips": "Consejos Importantes",
+    "loading": "Cargando...",
+    "error": "Error",
+    "search": "Buscar",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar"
+  },
+  "destinations": {
+    "title": "Destinos Populares",
+    "subtitle": "Explora los destinos más increíbles de Guatemala con guías detalladas de transporte. Cada destino incluye múltiples opciones de ruta, costos y consejos útiles.",
+    "transportDetails": "Ver Detalles de Transporte",
+    "noDestinations": "No se encontraron destinos",
+    "searchPlaceholder": "Buscar destinos..."
+  },
+  "transport": {
+    "title": "Opciones de Transporte",
+    "subtitle": "Elige la opción de transporte que mejor se adapte a tu presupuesto y preferencias de viaje.",
+    "private": "Transporte Privado",
+    "public": "Transporte Público",
+    "alternative": "Opciones Alternativas",
+    "schedule": "Horarios",
+    "route": "Ruta",
+    "booking": "Reservar",
+    "availability": "Disponibilidad"
+  },
+  "blog": {
+    "title": "Últimas Guías de Viaje",
+    "subtitle": "Mantente actualizado con las últimas guías, consejos y actualizaciones de transporte para viajar por Guatemala de manera segura y económica.",
+    "categories": "Categorías",
+    "popular": "Más Leídos",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Recibe las últimas actualizaciones de rutas y consejos de viaje.",
+    "subscribe": "Suscribirse",
+    "viewAll": "Ver Todas las Guías",
+    "publishedOn": "Publicado el",
+    "author": "Autor",
+    "readTime": "min de lectura"
+  },
+  "footer": {
+    "tagline": "Tu compañero confiable para viajar por Guatemala",
+    "quickLinks": "Enlaces Rápidos",
+    "categories": "Categorías",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "sitemap": "Mapa del Sitio"
+  },
+  "seo": {
+    "defaultTitle": "Guía de Transporte Guatemala - Blog Turístico",
+    "defaultDescription": "Tu guía completa para viajar por Guatemala. Información actualizada sobre transporte, destinos turísticos, costos y consejos prácticos para viajeros.",
+    "keywords": "Guatemala, turismo, transporte, viajes, destinos, guía, consejos",
+    "author": "Blog Turístico Guatemala"
+  },
+  "destinations": {
+    "title": "Destinos Populares",
+    "subtitle": "Explora los destinos más increíbles de Guatemala con guías detalladas de transporte. Cada destino incluye múltiples opciones de ruta, costos y consejos útiles.",
+    "transportDetails": "Ver Detalles de Transporte",
+    "featured": "Destinos Destacados",
+    "difficulty": {
+      "easy": "Fácil",
+      "medium": "Medio",
+      "hard": "Difícil"
+    },
+    "transportOptions": "Opciones de Transporte",
+    "highlights": "Destacados",
+    "fromCapital": "Desde la Capital",
+    "cost": "Costo",
+    "time": "Tiempo",
+    "companies": "Empresas",
+    "description": "Descripción",
+    "places": {
+      "antigua": {
+        "name": "Antigua Guatemala",
+        "description": "Encanto colonial con calles empedradas y telón de fondo volcánico",
+        "highlights": ["Patrimonio de la UNESCO", "Senderismo volcánico", "Escuelas de español"]
+      },
+      "atitlan": {
+        "name": "Lago Atitlán",
+        "description": "Impresionante lago volcánico rodeado de pueblos indígenas",
+        "highlights": ["Transporte en lancha", "Cultura indígena", "Vistas volcánicas"]
+      },
+      "tikal": {
+        "name": "Parque Nacional Tikal",
+        "description": "Antiguas ruinas mayas en el corazón de la selva",
+        "highlights": ["Templos mayas", "Observación de fauna", "Tours al amanecer"]
+      },
+      "semuc": {
+        "name": "Semuc Champey",
+        "description": "Piscinas naturales de piedra caliza en un entorno selvático exuberante",
+        "highlights": ["Piscinas naturales", "Exploración de cuevas", "Actividades de aventura"]
+      },
+      "riodulce": {
+        "name": "Río Dulce",
+        "description": "Río tropical que conecta el lago con la costa caribeña",
+        "highlights": ["Tours fluviales", "Aguas termales", "Observación de aves"]
+      },
+      "xela": {
+        "name": "Quetzaltenango (Xela)",
+        "description": "Segunda ciudad de Guatemala, puerta de entrada a las tierras altas",
+        "highlights": ["Cultura de las tierras altas", "Escuelas de idiomas", "Visitas al mercado"]
+      }
+    },
+    "transportTypes": {
+      "touristShuttle": "Shuttle turístico",
+      "firstClassBus": "Bus de primera clase",
+      "privateCar": "Auto privado",
+      "privateShuttle": "Shuttle privado",
+      "chickenBus": "Chicken bus",
+      "domesticFlight": "Vuelo doméstico",
+      "overnightBus": "Bus nocturno",
+      "privateTour": "Tour privado",
+      "localBuses": "Buses locales",
+      "boatTransport": "Transporte en lancha"
+    }
+  },
+  "ads": {
+    "hotel": "Hotel Casa Santo Domingo",
+    "hotelDesc": "Hotel de lujo en Antigua Guatemala",
+    "insurance": "Seguro de Viaje Guatemala",
+    "insuranceDesc": "Protege tu viaje con cobertura completa",
+    "shuttle": "Servicios de Shuttle Guatemala",
+    "shuttleDesc": "Shuttles privados cómodos a todos los destinos",
+    "spanish": "Escuelas de Español Antigua",
+    "spanishDesc": "Aprende español mientras viajas",
+    "getQuote": "Obtener Cotización",
+    "reserveNow": "Reservar Ahora",
+    "learnMore": "Saber Más"
+  },
+  "tips": {
+    "safety": {
+      "title": "Consejos de Seguridad",
+      "daylight": "Viajar Durante el Día",
+      "daylightDesc": "Usa el transporte público y viaja entre ciudades durante el día cuando sea posible.",
+      "valuables": "Mantén los Objetos de Valor Seguros",
+      "valuablesDesc": "No muestres artículos costosos. Usa un cinturón de dinero y mantén copias de documentos importantes.",
+      "buses": "Mantente Alerta en los Buses",
+      "busesDesc": "Mantén las bolsas en tu regazo en los chicken buses. Los buses de primera clase tienen compartimentos para equipaje.",
+      "itinerary": "Comparte tu Itinerario",
+      "itineraryDesc": "Deja que alguien conozca tus planes de viaje, especialmente para destinos remotos como Semuc Champey."
+    },
+    "money": {
+      "title": "Consejos de Dinero",
+      "bills": "Lleva Billetes Pequeños",
+      "billsDesc": "Los conductores de buses a menudo no tienen cambio para billetes grandes. Lleva billetes de 1, 5 y 10 quetzales.",
+      "negotiate": "Negocia el Transporte Privado",
+      "negotiateDesc": "Siempre acuerda los precios antes de subir a taxis o shuttles privados para evitar disputas.",
+      "tips": "Presupuesta para Propinas",
+      "tipsDesc": "Da propina a conductores de shuttle, operadores de botes y guías turísticos. 10-15% es estándar por buen servicio.",
+      "atm": "Disponibilidad de Cajeros",
+      "atmDesc": "Retira efectivo en ciudades principales. Las áreas rurales tienen acceso limitado a cajeros."
+    },
+    "practical": {
+      "title": "Consejos Prácticos",
+      "pack": "Empaca Ligero para Buses",
+      "packDesc": "Los chicken buses tienen espacio limitado. Las mochilas grandes pueden ir en el techo.",
+      "spanish": "Aprende Español Básico",
+      "spanishDesc": "Las rutas y horarios de buses rara vez están en inglés. El español básico ayuda inmensamente.",
+      "delays": "Planifica para Retrasos",
+      "delaysDesc": "Permite tiempo extra para conexiones. El clima y las condiciones de carretera pueden causar retrasos.",
+      "snacks": "Trae Snacks",
+      "snacksDesc": "Los viajes largos en bus pueden no incluir paradas para comida. Trae agua y snacks."
+    },
+    "booking": {
+      "title": "Consejos de Reserva",
+      "advance": "Reserva Shuttles con Anticipación",
+      "advanceDesc": "Los shuttles turísticos se llenan rápidamente durante temporada alta (diciembre-abril, julio-agosto).",
+      "flights": "Horario de Vuelos Domésticos",
+      "flightsDesc": "Reserva vuelos a Flores/Tikal temprano en la mañana para maximizar el tiempo en las ruinas.",
+      "flexible": "Horarios Flexibles de Buses",
+      "flexibleDesc": "Los chicken buses corren frecuentemente pero no siguen horarios estrictos. Los buses de primera clase son más puntuales.",
+      "pickup": "Recogida en Alojamiento",
+      "pickupDesc": "Muchos shuttles ofrecen recogida en hotel. Confirma la hora y ubicación el día anterior."
+    }
+  }
+}
